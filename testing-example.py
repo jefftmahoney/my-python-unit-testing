@@ -48,3 +48,22 @@ print(
         format_fail,
         'Factory Test #1a'
     )
+print(
+    my_assert(
+        get_caller('triple')(4),
+        123,
+        format_pass,
+        format_fail2,
+        'Factory Test #1b'
+    )
+)
+print(
+    my_assert(
+        get_caller('square')(8),
+        64,
+        format_pass,
+        format_fail,
+        'Factory Test #2'
+    )
+)
+
